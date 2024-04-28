@@ -1,7 +1,7 @@
 # Sword Admin for Professionals
 *Easy, simple, and secure open-source Admin Commands for professionals*
 
----17236635851
+---
 
 N.B: Github only contains source code, if you wish to contribute through other means, make an issue and detail your changes as well as a link to a model containing your changes. If you wish to have access to the complete source code (including all GUIs and instances) for contribution, head [here](https://create.roblox.com/store/asset/17236635851/).
 
