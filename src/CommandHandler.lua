@@ -3,7 +3,7 @@ local Data = require(script.Parent.Data)
 
 
 
-return  { 
+Commands = { 
 	["print"] = {
 		function(Player, args) 
 			print(args[1])
@@ -26,12 +26,14 @@ return  {
 		}
 	}, 
 	["help"] = {
-		function(Player, args) 
-			return [[
-			1. print 'input'
-			2. clear
-			3. help
-			]]
+		function(Player, args)
+			local output = ""
+			local i = 0
+			for v in pairs (Commands) do 
+				i += 1
+				output ..= i .. ". " .. v .."\n"
+			end
+			return output
 		end,
 		["args"] = {
 			function(command) end,
@@ -80,3 +82,5 @@ return  {
 	}
 	
 }
+
+return Commands
